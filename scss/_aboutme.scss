@@ -1,0 +1,41 @@
+.aboutme {
+    padding: 40px 0 60px 0;
+    transition: all 0.5s;
+    &__para {
+        color: $text-color-light;
+        margin-top: 15px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__content {
+        margin-top: 30px;
+    }
+    &__logocnt {
+        color: $primary-color;
+    }
+    &__technologies {
+        display: flex;
+        gap: 10PX;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       margin-top: 30px;
+    }
+    
+    &__knowtechs {
+        @include d-flex(space-evenly);
+        border-radius: 10px;
+        background-color: #81d7e5;
+        height: 66px;
+        border: 1px solid;
+        flex: 0 0 20%;
+
+        @include responsive(tablet-md){
+            flex: 0 0 49%;
+        }
+        @include responsive(mobile){
+            flex: 0 0 100%;
+        }
+    }
+
+}

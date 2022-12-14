@@ -1,0 +1,9 @@
+.footer {
+    padding: 40px 0;
+    background-color: $button-color;
+    border-radius: 5px;
+
+    &__content {
+        color: $primary-color;
+    }
+}

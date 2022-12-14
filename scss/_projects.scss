@@ -1,0 +1,22 @@
+.project {
+    transition: all 0.5s;
+   &__links {
+    padding-bottom: 40px;
+   }
+ &__heading {
+    text-align: center;
+ }
+ &__lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+ }
+ &__topic {
+    margin-top: 10px;
+    transition: transform .5s ease-out;
+    &:hover {
+        transform: scale(1.5);
+     }
+ }
+}

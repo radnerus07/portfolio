@@ -1,0 +1,86 @@
+@import './variables';
+
+
+body {
+  color: $text-color-general;
+  font-family: $font-varient;
+}
+
+.heading {
+
+  &-xl {
+    font-size: 60px;
+    color: $primary-color;
+    font-weight: 900;
+
+    @include responsive(tablet-md) {
+      font-size: 40px;
+    }
+    @include responsive(mobile) {
+    font-size: 30px;
+    }
+  }
+  
+  &-lg {
+    font-size: 48px;
+    line-height: 48px;
+    color: $primary-color;
+    font-weight: 900;
+    @include responsive(mobile) {
+      font-size: 28px;
+      }
+  
+  }
+  &-md {
+    font-size: 30px;
+    color: $button-color;
+    font-weight: 900;
+    @include responsive(mobile) {
+      font-size: 18px;
+      }
+  }
+  &-sm {
+    font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.27;
+   font-weight: 400;
+   color: $text-color-general;
+  }
+  @include responsive(mobile) {
+    font-size: 16px;
+    }
+
+}
+
+
+
+.paragraph {
+  &-md {
+    font-size: 20px;
+    line-height: 32px;
+    color: $text-color-general;
+    font-weight: 400;
+    @include responsive(mobile) {
+      font-size: 14px;
+      }
+}
+   
+  &-sm {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    color: $text-color-light;
+    @include responsive(mobile) {
+      font-size: 12px;
+      }
+  }
+  &-lg {
+    font-size: 18px;
+    font-weight: 400;
+    color: $text-color-light;
+    @include responsive(mobile) {
+      font-size: 12px;
+      }
+  }
+
+}

@@ -1,0 +1,62 @@
+.hero {
+      @include d-flex(center);
+      transition: all 0.5s;
+    &__main {
+        @include d-flex(space-evenly);
+
+        @include responsive(tablet-md) {
+            flex-direction: column;
+            padding-top: 120px;
+        }
+        @include responsive(mobile) {
+            height: 620px;
+            padding: 0;
+        }
+       
+    }
+    background: url('/assets/cloudbg.png') no-repeat;
+    height: 100vh;
+    &__profession {
+        color: $button-color;
+    }
+
+    &__image {
+        max-height: 500px;
+
+        @include responsive(mobile){
+            max-height: 550px;
+            max-width: 314px;
+        }
+    }
+    &__socialplatforms {
+        margin-top: 10px;
+    }
+    &__logo {
+        height: 30px;
+         margin-right: 10px;
+         transition: transform 0.5s;
+         &:hover {
+            transform: scale(1.5);
+         }
+    }
+    &__resume {
+        margin-top: 15px;
+    }
+    &__text {
+        @include responsive(tablet-md) {
+            text-align: center;
+            padding: 0 30px 0 30px;
+        }
+        @include responsive(mobile) {
+            padding: 0;
+        }
+    }
+}
+
+.hero__resume a {
+    color: $text-color-general;
+}
+
+.nav__bgclr {
+    background-color: #78dbeb;
+}

@@ -1,0 +1,8 @@
+.contact {
+    transition: all 0.5s;
+    padding: 40px 0 40px 0;
+    background-color: #e8e6e6;
+    &__heading {
+        color: $primary-color;
+    }
+}
