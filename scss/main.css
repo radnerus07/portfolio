@@ -259,7 +259,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: all 0.5s;
-  background: url("/assets/cloudbg.png");
+  background: url("https://live.staticflickr.com/65535/52562145472_cf921f1118_k.jpg");
   height: 100vh;
 }
 .hero__main {
