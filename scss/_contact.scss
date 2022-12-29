@@ -2,7 +2,16 @@
     transition: all 0.5s;
     padding: 40px 0 40px 0;
     background-color: #e8e6e6;
+    text-align: center;
     &__heading {
         color: $primary-color;
     }
+    &__row {
+        @include d-flex(space-evenly);
+
+        @include responsive(tablet) {
+            flex-direction: column;
+        }
+    }
+
 }

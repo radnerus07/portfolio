@@ -5,8 +5,14 @@
     border-radius: 10px 0px;
     border: none;
     background-color: $button-color;
-    font-weight: weight(bold);
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out 0s;
     padding: 10px 25px;
+    width: min-content;
+
+    @include responsive(mobile) {
+     padding: 2px 15px;
+     font-size: 13px;
+    }
 }
