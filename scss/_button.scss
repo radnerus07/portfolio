@@ -10,6 +10,10 @@
     transition: all 0.3s ease-in-out 0s;
     padding: 10px 25px;
     width: min-content;
+    transition: box-shadow 0.5s;
+    &:hover {
+        box-shadow: 2px 1px 5px blue;
+    }
 
     @include responsive(mobile) {
      padding: 2px 15px;

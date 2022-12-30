@@ -339,6 +339,10 @@ body {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+  transition: box-shadow 0.5s;
+}
+.btn:hover {
+  box-shadow: 2px 1px 5px blue;
 }
 @media (max-width: 768px) {
   .btn {
